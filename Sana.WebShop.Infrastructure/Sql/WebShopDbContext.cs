@@ -3,7 +3,7 @@ using Sana.WebShop.Model.Data;
 
 namespace Sana.WebShop.Infrastructure.Sql
 {
-    public partial class WebShopDbContext : DbContext
+    public class WebShopDbContext : DbContext
     {
         public WebShopDbContext()
             : base("name=WebShopDbContext")

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Sana.WebShop.Model.Contracts;
 using Sana.WebShop.Model.Data;
 
@@ -14,7 +11,7 @@ namespace Sana.WebShop.Infrastructure.Sql
 
         public SqlRepository()
         {
-            this._db = new WebShopDbContext();
+            _db = new WebShopDbContext();
         }
 
         public int AddProduct(Product product)
