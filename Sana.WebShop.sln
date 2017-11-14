@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MoreResources", "MoreResources", "{024D54BA-0553-42C7-9475-66D1888F80B5}"
 	ProjectSection(SolutionItems) = preProject
 		MoreResources\DatabaseDiagram.png = MoreResources\DatabaseDiagram.png
+		MoreResources\Fulldbscript.sql = MoreResources\Fulldbscript.sql
 	EndProjectSection
 EndProject
 Global
