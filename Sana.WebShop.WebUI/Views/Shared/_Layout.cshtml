@@ -16,12 +16,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Sana WebShop", "Index", "Products", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Products - Relational DB", "Index", "Products", new { area = "", mode = "SQL" }, null)</li>
+                    <li>@Html.ActionLink("Products - In Memory", "Index", "Products", new { area = "", mode="Memory"  }, null)</li>
+                    <li class="text-info" >Please select Persistance &nbsp;:&nbsp;</li>
+                    
                 </ul>
             </div>
         </div>
