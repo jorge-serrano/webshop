@@ -46,8 +46,14 @@ namespace Sana.WebShop.Infrastructure.Sql
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Product>()
-                .ToTable("Product")
-                .Property(e => e.Price)
+                .ToTable("Product");
+            //This will work soon after next EF release
+            //modelBuilder.Entity<Product>()
+            //   .HasIndex(i=>i.ProductNumber)
+            //   .IsUnique(true)
+            //   .HasName("UIX_ProductNumber");
+            modelBuilder.Entity<Product>()
+               .Property(e => e.Price)
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Product>()
